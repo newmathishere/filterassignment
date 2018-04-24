@@ -1,0 +1,211 @@
+<!--
+Credit: https://www.jqueryscript.net/layout/Creating-A-Dynamic-List-Filter-using-jQuery.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="utf-8">
+        <!-- set the character set -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- first step to a responsive site -->
+        <title>New York City Renewal Schools</title>
+
+
+
+        <!-- Your styles should be called here -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Roboto" rel="stylesheet">
+
+<!-- Your styles should be called here -->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<body>
+    <!-- YOUR CONTENT GOES HERE -->
+
+
+    <h1>
+        Amid criticism, how does New York City's Renewal Schools Program measure up?
+    </h1>
+
+    <h3>
+        By: Chris Hickey
+    </h3>
+
+<div> <img src="images/bronxhighschoolbusiness.jpg" id="photo1">
+<figcaption> Bronx High School of Business is one of New York City's 78 "Renewal" Schools (credit: NYCDOE)</figcaption>
+</div>
+
+<p>
+
+  The New York City Department of Education deems 78 of its middle and high schools as "Renewal" schools. This means
+  they've been the beneficiaries of 582 million dollars in extra funding to support social services and academics. It's
+  an effort to improve learning because their students have consistently scored poorly on state Math and English Language Arts
+  (ELA) assessment tests. </p>
+
+<p>Mayor Bill De Blasio's administration, under the stewardship of former schools Chancellor Carmen Fariña, launched the Renewal
+  Schools Program at 94 campuses in late 2014. The city established a policy that if the schools did not improve substantially
+  within three years, they would be closed. </p>
+
+  <p>Since 2014, the program has achieved mixed results. While most of the students at the renewal schools improved
+    their test scores in reading and math last year, nearly all the schools still lag behind citywide averages in test scores.
+     Nearly half of the high schools in the program did not meet 4-year or 6-year graduation targets. </p>
+
+  <p>Twenty-one of the schools will be moved out of the program next year because they've improved. The Department of Education
+    dubs these "Rise" schools. But DOE also announced recently that it would shutter five of the schools by next year and merge
+    five more because they've failed to measure up to expectations. Some critics have since argued the program hasn't been very successful. </p>
+
+  <p>A June 2017 study authored by Aaron Pallas of Columbia University's Teachers College compared test scores and graduation rate data from
+     78 of the schools in the program to 90 other struggling schools with similar demographics that weren't in the program. Pallas <a href="https://www.chalkbeat.org/posts/ny/2017/06/21/do-struggling-schools-in-new-york-citys-renewal-turnaround-program-outperform-those-left-out-a-new-analysis-suggests-no/" target="_blank">told Chalkbeat</a>
+     that "based on the evidence I see… the program is not having a meaningful impact on academic outcomes."</p>
+
+  <p><a href="https://www.manhattan-institute.org/sites/default/files/R-MW-0717.pdf" target="_blank">Another June 2017 study</a> by the conservative Manhattan Institute came to slightly different conclusions. Researcher Marcus Winters found that
+    schools in the Renewal Program had indeed generally improved outcomes, but at a significant cost.</p>
+
+  <p>"The magnitude of RSP's positive average effect is meaningful. However, the effect is statistically insignificant for certain grades in math
+    and ELA; and it is statistically insignificant for ELA when renewal schools are compared only with nonrenewal schools that were low-performing as
+    of 2013," the study says.</p>
+
+  <p>Winters questioned whether the 1.4 million additional dollars invested per school was worth it.</p>
+
+  <p>"In short, these findings suggest that New York's Renewal School Program has boosted student achievement, on average, in some of the city's worst
+    schools; but RSP has done so at exceptionally high cost, especially when compared with the low-cost, highly effective, alternative of swiftly closing
+    ineffective schools."</p>
+
+  <p>New schools Chancellor Richard Carranza, who was hired in March, has expressed his support for continuing the Renewal Program, but it's still unclear how long it will last.</p>
+
+  <p>The interactive below allows you filter the remaining 78 Renewal schools based on several categories. <a href="https://tools.nycenet.edu/renrec/#year=2016-17&dbn=32K552" target="_blank">The data come from the New York City Department of Education</a></p>
+<br>
+
+
+
+
+
+<section>
+
+<button class="cat-all" >All Categories</button>
+<button class="cat-7" >Met 4-Year Graduation Rate (H.S.) </button>
+<button class="cat-8" >Did Not Meet 4-Year Graduation Rate (H.S.)</button>
+<button class="cat-1" >Met Math Proficiency Target</button>
+<button class="cat-2" >Did Not Meet Math Proficiency Target</button>
+<button class="cat-3" >Met ELA Proficiency Target</button>
+<button class="cat-4" >Did Not Meet ELA Proficiency Target</button>
+<button class="cat-5" >Closing</button>
+<button class="cat-6" >Leaving Program Because of Improvement ("Rise")</button>
+
+
+
+
+</section>
+
+<section>
+
+
+
+<div class="group-1 group-4 group-6" id="school"><p class="text">Grades: Pre-K to 5th<br>333 E 4th St<br>New York, NY<br>10009</p><a href="http://schools.nyc.gov/SchoolPortals/01/M015/default.htm" target="_blank">P.S. 015 Roberto Clemente</a></div>
+<div class="group-6 group-7" id="school"><p class="text">Grades: 9th to 12th<br>220 Henry St<br>New York, NY<br>10002</p><a href="http://schools.nyc.gov/SchoolPortals/01/M292/default.htm" target="_blank">Orchard Collegiate Academy</div>
+<div class="group-2 group-4" id="school"><p class="text">Grades: K to 5th<br>41 W 117th St<br>New York, NY<br>10026</p><a href="http://schools.nyc.gov/SchoolPortals/03/M149/default.htm" target="_blank">P.S. 149 Sojourner Truth</a></div>
+<div class="group-3 group-7" id="school"><p class="text">Grades: 6th to 12th<br>215 W 114th St<br>New York, NY<br>10026</p><a href="http://schools.nyc.gov/SchoolPortals/03/M415/default.htm" target="_blank">Wadleigh Secondary School for the Performing & Visual Arts</a></div>
+<div class="group-5 group-4" id="school">P.S. 050 Vito Marcantonio</div>
+<div class="group-6 group-3 group-1" id="school"><p class="text">Grades: 6th to 8th<br>319 E 117th St<br>New York, NY<br>10035</p><a href="http://schools.nyc.gov/SchoolPortals/04/M377/default.htm" target="_blank">Renaissance School of the Arts</a></div>
+<div class="group-5 group-7" id="school"><p class="text">test scores, other stuff</p><a href="http://schools.nyc.gov/SchoolPortals/04/M409/default.htm" target="_blank">Coalition School for Social Change</a></div>
+<div class="group-3 group-2 group-3" id="school"><p class="text">Grades: Pre-K to 8th<br>301 W 140 St<br>New York, NY<br>10030</p><a href="http://schools.nyc.gov/SchoolPortals/05/M123/default.htm" target="_blank">P.S. 123 Mahalia Jackson</a></div>
+<div class="group-2 group-3" id="school"><p class="text">Grades: Pre-K to 5th<br>244 W 144th St<br>New York, NY<br>10030</p><a href="http://schools.nyc.gov/SchoolPortals/05/M194/default.htm" target="_blank">P.S. 194 Countee Cullen</a></div>
+<div class="group-3" id="school"><p class="text">Grades: K to 5th<br>185 Wadsworth Ave<br>New York, NY<br>10033</p><a href="https://tools.nycenet.edu/renrec/#year=2016-17&dbn=06M132" target="_blank">P.S. 132 Juan Pablo Duarte</a></div>
+<div class="group-8 group-5" id="school"><p class="text">Grades: 9th to 12th<br>549 Audubon Ave<br>New York, NY<br>10040</p><a href="http://schools.nyc.gov/SchoolPortals/06/M468/default.htm" target="_blank">High School for Health Careers and Sciences</a><p class="text"></div>
+<div class="group-6 group-1" id="school"><p class="text">Grades: 6th to 8th<br>180 Wadsworth Ave<br>New York, NY<br>10033</p><a href="http://schools.nyc.gov/SchoolPortals/06/M528/default.htm" target="_blank">I.S. 528 Bea Fuller Rodgers School</a></div>
+<div class="group-6 group-1 group-3" id="school"><p class="text">Grades: Pre-K to 5th<br>4301, 333 E 135th St<br>Bronx, NY<br>10454</p><a href="http://schools.nyc.gov/SchoolPortals/07/X154/default.htm" target="_blank">P.S. 154 Jonathan D. Hyatt</a></div>
+<div class="group-5 group-8" id="school"><p class="text"></p><a href="http://schools.nyc.gov/SchoolPortals/07/X547/default.htm" target="_blank">New Explorers High School<p class="text"></p></div>
+<div class="group-2 group-3" id="school"><p class="text">Grades: 6th to 8th<br>1025 Morrison Ave<br>Bronx, NY<br>10472</p><a href="http://schools.nyc.gov/SchoolPortals/08/X123/default.htm" target="_blank">J.H.S. 123 James M. Kieran</a></div>
+<div class="group-2" id="school"><p class="text">Grades: 6th to 8th<br>890 Cauldwell Ave<br>Bronx, NY<br>10456</p><a href="http://schools.nyc.gov/SchoolPortals/08/X301/default.htm" target="_blank">M.S. 301 Paul L. Dunbar</a></div>
+<div class="group-8" id="school"><p class="text">Grades: 9th to 12th<br>925 Longwood Ave<br>Bronx, NY<br>10459</p><a href="http://schools.nyc.gov/SchoolPortals/08/X332/default.htm" target="_blank">Holcombe L. Rucker School of Community Research</a></div>
+<div class="group-2 group-3" id="school"><p class="text">Grades: 6th to 8th<br>456 White Plains Rd<br>Bronx, NY<br>10473</p><a href="http://schools.nyc.gov/SchoolPortals/08/X375/default.htm" target="_blank">The Bronx Mathematics Preparatory School</a></div>
+<div class="group-8" id="school"><p class="text">3000 E Tremont Ave - Floor 1<br>Bronx, NY<br>10461</p><a href="http://schools.nyc.gov/SchoolPortals/08/X405/default.htm" target="_blank">Herbert H. Lehman High School</a></div>
+<div class="group-3 group-2" id="school"><p class="text">730 Bryant Ave<br>Bronx, NY<br>10474</p><a href="http://schools.nyc.gov/SchoolPortals/08/X424/default.htm" target="_blank">The Hunts Point School</a></div>
+<div class="group-8" id="school"><p class="text">180 Wadsworth Ave<br>New York, NY<br>10033</p><a href="http://schools.nyc.gov/SchoolPortals/08/X530/default.htm" target="_blank">Longwood Preparatory Academy</a></div>
+<div class="group-2" id="school"><p class="text">965 Longwood Ave<br>Bronx, NY<br>10459</p><a href="http://schools.nyc.gov/SchoolPortals/09/X022/default.htm" target="_blank">J.H.S. 022 Jordan L. Mott</a></div>
+<div class="group-2 group-3" id="school"><p class="text">180 Wadsworth Ave<br>New York, NY<br>10033</p><a href="http://schools.nyc.gov/SchoolPortals/09/X117/default.htm" target="_blank">I.S. 117 Joseph H. Wade</a></div>
+<div class="group-2 group-3" id="school"><p class="text">1865 Morris Ave<br>Bronx, NY<br>10453</p><a href="http://schools.nyc.gov/SchoolPortals/09/X219/default.htm" target="_blank">I.S. 219 New Venture School</a></div>
+<div class="group-7" id="school"><p class="text">240 E 172nd St<br>Bronx, NY<br>10457</p><a href="http://schools.nyc.gov/SchoolPortals/09/X227/default.htm" target="_blank">Bronx Collegiate Academy</a></div>
+<div class="group-2 group-3" id="school"><p class="text">1600 Webster Ave # 440<br>Bronx, NY<br>10457</p><a href="http://schools.nyc.gov/SchoolPortals/09/X313/default.htm" target="_blank">I.S. 313 School of Leadership Development</a></div>
+<div class="group-3 group-6" id="school"><p class="text">250 E 164th St<br>Bronx, NY<br>10456</p><a href="http://schools.nyc.gov/SchoolPortals/09/X324/default.htm" target="_blank">Bronx Early College Academy for Teaching & Learning</a></div>
+<div class="group-5 group-2 group-4" id="school"><p class="text">1000 Teller Ave<br>Bronx, NY<br>10456</p><a href="http://schools.nyc.gov/SchoolPortals/09/X325/default.htm" target="_blank">Urban Science Academy</a></div>
+<div class="group-2 group-3" id="school"><p class="text">1000 Teller Ave<br>Bronx, NY<br>10456</p><a href="http://schools.nyc.gov/SchoolPortals/09/X328/default.htm" target="_blank">New Millennium Business Academy Middle School</a></div>
+<div class="group-6 group-7" id="school"><p class="text">240 E 172nd St<br>Bronx, NY<br>10457</p><a href="http://schools.nyc.gov/SchoolPortals/09/X329/default.htm" target="_blank">Dreamyard Preparatory School</a></div>
+<div class="group-2 group-3" id="school"><p class="text">1600 Webster Ave<br>Bronx, NY<br>10457</p><a href="http://schools.nyc.gov/SchoolPortals/09/X339/default.htm" target="_blank">I.S. 339</a></div>
+<div class="group-7" id="school"><p class="text">240 E 172nd St<br>Bronx, NY<br>10457</p><a href="http://schools.nyc.gov/SchoolPortals/09/X412/default.htm" target="_blank">Bronx High School of Business</a></div>
+<div class="group-1 group-3" id="school"><p class="text">149 E Mosholu Pkwy N<br>Bronx, NY<br>10467</p><a href="http://schools.nyc.gov/SchoolPortals/10/X080/default.htm" target="_blank">J.H.S. 080 The Mosholu Parkway</a></div>
+<div class="group-2 group-4" id="school"><p class="text">2400 Marion Ave<br>Bronx, NY<br>10458</p><a href="http://schools.nyc.gov/SchoolPortals/10/X085/default.htm" target="_blank">P.S. 085 Great Expectations</a></div>
+<div class="group-1 group-3" id="school"><p class="text">40 W Tremont Ave<br>Bronx, NY<br>10453</p><a href="http://schools.nyc.gov/SchoolPortals/10/X331/default.htm" target="_blank">The Bronx School of Young Leaders</a></div>
+<div class="group-3 group-2" id="school"><p class="text">120 E 184th St<br>Bronx, NY<br>10468</p><a href="http://schools.nyc.gov/SchoolPortals/10/X363/default.htm" target="_blank">Academy for Personal Leadership and Excellence</a></div>
+<div class="group-2 group-3" id="school"><p class="text">2225 Webster Ave<br>Bronx, NY<br>10457</p><a href="http://schools.nyc.gov/SchoolPortals/10/X391/default.htm" target="_blank">The Angelo Patri Middle School</a></div>
+<div class="group-7" id="school"><p class="text">500 E Fordham Rd<br>Bronx, NY<br>10458</p><a href="http://schools.nyc.gov/SchoolPortals/10/X438/default.htm" target="_blank">Fordham Leadership Academy for Business and Technology</a></div>
+<div class="group-7" id="school"><p class="text">100 W Mosholu Parkway S<br>Bronx, NY<br>10468</p><a href="http://schools.nyc.gov/SchoolPortals/10/X440/default.htm" target="_blank">Dewitt Clinton High School</a></div>
+<div class="group-2" id="school"><p class="text">1925 Schieffelin Ave # 119<br>Bronx, NY<br>10466</p><a href="http://schools.nyc.gov/SchoolPortals/11/X112/default.htm" target="_blank">P.S. 112 Bronxwood</a></div>
+<div class="group-3" id="school"><p class="text">3710 Barnes Ave<br>Bronx, NY<br>10467</p><a href="http://schools.nyc.gov/SchoolPortals/11/X370/default.htm" target="_blank">Leaders of Tomorrow</a></div>
+<div class="group-5 group-2 group-4" id="school"><p class="text">700 E 179th St<br>Bronx, NY<br>10457</p><a href="http://schools.nyc.gov/SchoolPortals/12/X092/default.htm" target="_blank">P.S. 092 Bronx</a></div>
+<div class="group-1 group-3" id="school"><p class="text">977 Fox St<br>Bronx, NY<br>10459</p><a href="http://schools.nyc.gov/SchoolPortals/12/X217/default.htm" target="_blank">School of Performing Arts</a></div>
+<div class="group-3" id="school"><p class="text">180 Wadsworth Ave<br>New York, NY<br>10033</p><a href="https://tools.nycenet.edu/renrec/#year=2016-17&dbn=01M015" target="_blank">Fannie Lou Hamer Middle School</a></div>
+<div class="group-4 group-2" id="school"><p class="text">977 Fox St<br>Bronx, NY<br>10459</p><a href="http://schools.nyc.gov/SchoolPortals/12/X384/default.htm" target="_blank">Entrada Academy</a></div>
+<div class="group-1 group-3" id="school"><p class="text">1180 Tinton Ave<br>Bronx, NY<br>10456</p><a href="http://schools.nyc.gov/SchoolPortals/12/X463/default.htm" target="_blank">Urban Scholars Community School</a></div>
+<div class="group-6 group-1" id="school"><p class="text">51 St Edwards St<br>Brooklyn, NY<br>11205</p><a href="http://schools.nyc.gov/SchoolPortals/13/K067/default.htm" target="_blank">P.S. 067 Charles A. Dorsey</a></div>
+<div class="group-2 group-3" id="school"><p class="text">344 Monroe St<br>Brooklyn, NY<br>11216</p><a href="http://schools.nyc.gov/SchoolPortals/13/K301/default.htm" target="_blank">Satellite East Middle School</a></div>
+<div class="group-6 group-1 group-3" id="school"><p class="text">183 South 3rd Street<br>Brooklyn, NY<br>11211</p><a href="http://schools.nyc.gov/SchoolPortals/14/K050/default.htm" target="_blank">J.H.S. 050 John D. Wells</a></div>
+<div class="group-2 group-3 group-8" id="school"><p class="text">215 Heyward St<br>Brooklyn, NY<br>11206</p><a href="http://schools.nyc.gov/SchoolPortals/14/K071/default.htm" target="_blank">Juan Morel Campos Secondary School</a></div>
+<div class="group-6 group-7" id="school"><p class="text">50 Bedford Ave<br>Brooklyn, NY<br>11222</p><a href="http://schools.nyc.gov/SchoolPortals/14/K610/default.htm" target="_blank">Automotive High School</a></div>
+<div class="group-7" id="school"><p class="text">1700 Fulton St<br>Brooklyn, NY<br>11213</p><a href="http://schools.nyc.gov/SchoolPortals/16/K455/default.htm" target="_blank">Boys and Girls High School</a></div>
+<div class="group-6 group-3" id="school"><p class="text">46 McKeever Pl<br>Brooklyn, NY<br>11225</p><a href="http://schools.nyc.gov/SchoolPortals/17/K352/default.htm" target="_blank">Ebbets Field Middle School</a></div>
+<div class="group-6 group-7" id="school"><p class="text">6565 Flatlands Ave<br>Brooklyn, NY<br>11236</p><a href="http://schools.nyc.gov/SchoolPortals/18/K566/default.htm" target="_blank">Brooklyn Generation School</a></div>
+<div class="group-6 group-3" id="school"><p class="text">180 Wadsworth Ave<br>New York, NY<br>10033</p><a href="https://tools.nycenet.edu/renrec/#year=2016-17&dbn=01M015" target="_blank">East Flatbush Community Research School</a></div>
+<div class="group-2" id="school"><p class="text">180 Wadsworth Ave<br>New York, NY<br>10033</p><a href="https://tools.nycenet.edu/renrec/#year=2016-17&dbn=01M015" target="_blank">P.S. 306 Ethan Allen</a></div>
+<div class="group-6 group-1 group-3" id="school"><p class="text"></p><a href="https://tools.nycenet.edu/renrec/#year=2016-17&dbn=01M015" target="_blank">P.S. 328 Phyllis Wheatley</a></div>
+<div class="group-8" id="school"><p class="text"></p><a href="https://tools.nycenet.edu/renrec/#year=2016-17&dbn=01M015" target="_blank">Multicultural High School</a></div>
+<div class="group-6 group-7" id="school"><p class="text">999 Jamaica Ave<br>Brooklyn, NY<br>11208</p><a href="http://schools.nyc.gov/SchoolPortals/19/K659/default.htm" target="_blank">Cypress Hills Collegiate Preparatory School</a></div>
+<div class="group-1 group-3" id="school"><p class="text">76 Lott Ave<br>Brooklyn, NY<br>11212</p><a href="http://schools.nyc.gov/SchoolPortals/23/K165/default.htm" target="_blank">P.S. 165 Ida Posner</a></div>
+<div class="group-2" id="school"><p class="text">213 Osborn St<br>Brooklyn, NY<br>11212</p><a href="http://schools.nyc.gov/SchoolPortals/23/K284/default.htm" target="_blank">P.S. 284 The Gregory Jocko Jackson School of Sports, Art, and Technology</a></div>
+<div class="group-2 group-4" id="school"><p class="text">85 Watkins St<br>Brooklyn, NY<br>11212</p><a href="http://schools.nyc.gov/SchoolPortals/23/K298/default.htm" target="_blank">P.S. 298 Dr. Betty Shabazz</a></div>
+<div class="group-5 group-8" id="school"><p class="text">2021 Bergen St<br>Brooklyn, NY<br>11233</p><a href="http://schools.nyc.gov/SchoolPortals/23/K493/default.htm" target="_blank">Brooklyn Collegiate: A College Board School</a></div>
+<div class="group-6 group-7" id="school"><p class="text">45-10 94th St<br>Queens, NY<br>11373</p><a href="http://schools.nyc.gov/SchoolPortals/24/Q296/default.htm" target="_blank">Pan American International High School</a></div>
+<div class="group-8" id="school"><p class="text">35-01 Union St<br>Queens, NY<br>11354</p><a href="http://schools.nyc.gov/SchoolPortals/25/Q460/default.htm" target="_blank">Flushing High School</a></div>
+<div class="group-7" id="school"><p class="text">230-17 Hillside Avenue<br>Queens, NY<br>11427</p><a href="http://schools.nyc.gov/SchoolPortals/26/Q435/default.htm" target="_blank">Martin Van Buren High School</a></div>
+<div class="group-5" id="school"><p class="text">488 Beach 66th St, Queens, NY 11692</p><a href="http://schools.nyc.gov/SchoolPortals/27/Q042/default.htm" target="_blank">P.S./M.S 042 R. Vernam</a></div>
+<div class="group-5" id="school"><p class="text">10-45 Nameoke St<br>Queens, NY<br>11691</p><a href="http://schools.nyc.gov/SchoolPortals/27/Q053/default.htm" target="_blank">M.S. 053 Brian Piccolo</a></div>
+<div class="group-6 group-1 group-3" id="school"><p class="text">825 Hicksville Rd<br>Queens, NY<br>11691</p><a href="http://schools.nyc.gov/SchoolPortals/27/Q197/default.htm" target="_blank">P.S. 197 The Ocean School</a></div>
+<div class="group-7" id="school"><p class="text">156-10 Baisley Blvd<br>Queens, NY<br>11434</p><a href="http://schools.nyc.gov/SchoolPortals/27/Q400/default.htm" target="_blank">August Martin High School</a></div>
+<div class="group-8" id="school"><p class="text">89-30 114th St<br>Queens, NY<br>11418</p><a href="http://schools.nyc.gov/SchoolPortals/27/Q475/default.htm" target="_blank">Richmond Hill High School</a></div>
+<div class="group-6" id="school"><p class="text">101-01 Rockaway Blvd<br>Queens, NY<br>11417</p><a href="http://schools.nyc.gov/SchoolPortals/27/Q480/default.htm" target="_blank">John Adams High School</a></div>
+<div class="group-6 group-1" id="school"><p class="text">108-35 167th St<br>Queens, NY<br>11433</p><a href="http://schools.nyc.gov/SchoolPortals/28/Q008/default.htm" target="_blank">J.H.S. 008 Richard S. Grossley</a></div>
+<div class="group-4" id="school"><p class="text">37-15 13th St<br>Queens, NY<br>11101</p><a href="http://schools.nyc.gov/SchoolPortals/30/Q111/default.htm" target="_blank">P.S. 111 Jacob Blackwell</a></div>
+<div class="group-8" id="school"><p class="text">14-30 Broadway<br>Queens, NY<br>11106</p><a href="http://schools.nyc.gov/SchoolPortals/30/Q450/default.htm" target="_blank">Long Island City High School</a></div>
+<div class="group-2 group-3" id="school"><p class="text">231 Palmetto St<br>Brooklyn, NY<br>11221</p><a href="http://schools.nyc.gov/SchoolPortals/32/K291/default.htm" target="_blank">J.H.S. 291 Roland Hayes</a></div>
+<div class="group-2 group-3" id="school"><p class="text">35 Starr Street, 3rd Floor<br>Brooklyn, NY<br>11221</p><a href="http://schools.nyc.gov/SchoolPortals/32/K349/default.htm" target="_blank">I.S. 349 Math, Science & Technology</a></div>
+<div class="group-7" id="school"><p class="text">400 Irving Ave<br>Brooklyn, NY<br>11221</p><a href="http://schools.nyc.gov/schoolportals/32/k552/default.htm" target="_blank">Academy of Urban Planning</a></div>
+
+</section>
+
+
+<p id="bottomtext">
+
+</p>
+</section>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- Your javascript should be called here -->
+<script src="main.js"></script>
+
+</html>

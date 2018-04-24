@@ -1,0 +1,278 @@
+
+
+
+
+
+.cat-all,.cat-1,.cat-2,.cat-3,.cat-4,.cat-5,.cat-6,.cat-7,.cat-8 {
+
+  cursor: pointer;
+  border: solid 3px #888;
+  outline:none;
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+
+  height: 75px;
+  border-color: #ad480d;
+  font-family: Roboto, sans-serif;
+  font-size: 12pt;
+  background-color: #fcee32;
+  -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+
+
+}
+
+.cat-all:hover,.cat-1:hover,.cat-2:hover,.cat-3:hover,.cat-4:hover,.cat-5:hover,.cat-6:hover,.cat-7:hover,.cat-8:hover {
+  background-color: #ff4747;
+      color: black;
+
+
+}
+
+div {
+
+
+
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    text-align: left;
+    font-family: Roboto, sans-serif;
+
+}
+
+
+h2 {
+    font-size: 1.5em;
+    text-align: left;
+    padding-bottom: 5px;
+    font-family: Robot, sans-serif;
+}
+
+h3 {
+    text-align: left;
+    font-size: .8em;
+    opacity: .8;
+    padding-bottom: 20px;
+    font-family: Roboto, sans-serif;
+}
+
+
+
+
+
+.group-1,.group-2,.group-3,.group-4,.group-5,.group-6,.group-7,.group-8 {
+
+    font-size: 15px, bold;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    display: inline-block;
+    border: solid 5px #ddd;
+    margin: 5px;
+    padding: 20px;
+    width: 115px;
+    height: 95px;
+    border-color: #9b0a03;
+    animation-fill-mode: backwards;
+    background-color: #ff4747;
+    float:left;
+    text-decoration: none;
+
+}
+
+.group-1:hover,.group-2:hover,.group-3:hover,.group-4:hover,.group-5:hover,.group-6:hover,.group-7:hover,.group-8:hover {
+  background-color: #fcee32;
+      color: black;
+      overflow: scroll;
+
+
+}
+
+#school .text {
+
+
+visibility:hidden;
+position: absolute;
+
+}
+
+#school:hover .text {
+visibility:visible;
+position: relative;
+margin-left: 0px;
+white-space: pre;
+
+
+
+
+}
+
+
+
+.text {
+  font-size: 12px;
+  align: left;
+  margin-left: 0px;
+  padding-left: 0px;
+
+
+
+
+}
+
+.gradestext {
+  font: bold
+
+
+}
+
+p {
+
+  text-align: left;
+  padding: 5px;
+  font-size: 14pt;
+  font-family: Roboto, sans-serif;
+
+
+
+}
+
+
+#bottomtext{
+  margin-top: 200%;
+  position: relative;
+
+}
+
+}
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    td, th {
+        width: auto;
+        display: table-cell;
+    }
+
+    p {
+      margin-left:100px;
+      margin-right: 100px;
+      text-align: left;
+      padding: 5px;
+      font-size: 14pt;
+
+    }
+
+h1,h2,h3 {
+    margin-left: 100px;
+    padding: 5px;
+
+
+
+}
+
+#photo1{
+  width: 100%;
+  position: relative;
+  display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+
+}
+figcaption {
+
+          text-align: center;
+
+
+}
+
+}
+
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+
+    p {
+      margin-left:170px;
+      margin-right: 170px;
+      text-align: left;
+      padding: 5px;
+      font-size: 14pt;
+
+}
+
+
+
+.cat-all: hover {
+
+  background-color: #4CAF50;
+     color: white;
+
+}
+
+
+
+
+.cat-all,.cat-1,.cat-2,.cat-3,.cat-4,.cat-5,.cat-6,.cat-7,.cat-8 {
+      width: 31.3%;
+
+
+}
+
+
+    h1,h2,h3 {
+        margin-left: 170px;
+        padding: 5px;
+
+
+
+    }
+
+    .group-1,.group-2,.group-3,.group-4,.group-5,.group-6,.group-7,.group-8 {
+
+        font-size: 20px;
+        font-family: Roboto, sans-serif;
+        text-align: center;
+        display: inline-block;
+        border: solid 5px #ddd;
+        margin: 5px;
+        padding: 20px;
+        width: 14.6%;
+        height: 115px;
+        border-color: #9b0a03;
+        align-items: center;
+        float:left;
+        text-decoration: none;
+        font:black;
+
+    }
+
+a:link {
+        text-decoration: none;
+        font:black;
+    }
+
+a:hover {
+        text-decoration: underline;
+    }
+
+
+#photo1 {
+    margin-left: 380px;
+
+
+}
+
+figcaption{
+    margin-left: 380px;
+
+}
+
+
+
+}
