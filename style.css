@@ -170,11 +170,14 @@ p {
 
 h1,h2,h3 {
     margin-left: 100px;
+
     padding: 5px;
 
 
 
 }
+
+
 
 #photo1{
   width: 100%;
@@ -198,8 +201,8 @@ figcaption {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
 
     p {
-      margin-left:170px;
-      margin-right: 170px;
+      margin-left:220px;
+      margin-right: 220px;
       text-align: left;
       padding: 5px;
       font-size: 14pt;
@@ -226,8 +229,10 @@ figcaption {
 
 
     h1,h2,h3 {
-        margin-left: 170px;
+        margin-left: 220px;
+        margin-right:220px
         padding: 5px;
+        padding-right: 220px;
 
 
 
